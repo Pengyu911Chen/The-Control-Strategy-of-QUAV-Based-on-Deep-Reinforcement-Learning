@@ -1,7 +1,5 @@
 # The Control Strategy of QUAV Based on Deep Reinforcement Learning
 
-Copyright 2026, Pengyu Chen, Johns Hopkins University. All Rights Reserved.
-
 This project contains a MuJoCo quadrotor simulation, PID control utilities, and PPO reinforcement-learning code for training and evaluating a Crazyflie-style quadrotor policy.
 
 <p align="center">
