@@ -5,8 +5,8 @@ Copyright 2026, Pengyu Chen, Johns Hopkins University. All Rights Reserved.
 This project contains a MuJoCo quadrotor simulation, PID control utilities, and PPO reinforcement-learning code for training and evaluating a Crazyflie-style quadrotor policy.
 
 <p align="center">
-  <img src="image/PPO1.jpg" alt="PPO training result 1" width="48%" />
-  <img src="image/PPO2.jpg" alt="PPO training result 2" width="48%" />
+  <img src="image/PPO1.png" alt="PPO training result 1" width="48%" />
+  <img src="image/PPO2.png" alt="PPO training result 2" width="48%" />
 </p>
 
 ## Project Structure
