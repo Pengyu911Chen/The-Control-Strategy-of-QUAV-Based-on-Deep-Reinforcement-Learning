@@ -1,0 +1,48 @@
+sim_dt: 0.001
+control_dt: 0.025
+obs_history_len: 1
+action_smoothing: 0.5
+
+ctrllimited: false
+jointlimited: false
+reduced_xml: true
+
+init_noise: 3  # degrees
+
+pdgains:
+  "rotor1": [0.1, 0.01]
+  "rotor2": [0.1, 0.01]
+  "rotor3": [0.1, 0.01]
+  "rotor4": [0.1, 0.01]
+
+newpdgains:
+  "rotor1_joint": [0.1, 0.01]
+  "rotor2_joint": [0.1, 0.01]
+  "rotor3_joint": [0.1, 0.01]
+  "rotor4_joint": [0.1, 0.01]
+
+observation_noise:
+  enabled: true
+  multiplier: 1.0
+  type: "uniform"
+  scales:
+    root_pos: 0.01
+    root_orient: 0.02
+    root_lin_vel: 0.05
+    root_ang_vel: 0.05
+    rotor_speeds: 0.02
+
+perturbation:
+  enable: true
+  bodies: ["base_link"]
+  force_magnitude: 5
+  torque_magnitude: 1
+  interval: 5
+
+dynamics_randomization:
+  enable: true
+  interval: 0.5
+
+quadrotor:
+  rotor_joints: ["rotor1", "rotor2", "rotor3", "rotor4"]
+  body_name: "base_link"
